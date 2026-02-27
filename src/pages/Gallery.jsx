@@ -127,19 +127,13 @@ const Gallery = () => {
                   exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
                   onClick={() => setSelectedImage(item)}
+                  style={{
+                    backgroundImage: `url(${item.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundColor: '#0d7377'
+                  }}
                 >
-                  <img 
-                    src={item.image} 
-                    alt={item.title}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
-                    }}
-                  />
-                  <div className="gallery-placeholder" style={{ display: 'none' }}>
-                    {item.emoji}
-                  </div>
                   <div className="gallery-overlay">
                     <p>{item.title}</p>
                   </div>
@@ -343,31 +337,15 @@ const Gallery = () => {
                 overflow: 'hidden'
               }}
             >
-              <div style={{ position: 'relative', width: '100%', aspectRatio: '16/10' }}>
-                <img 
-                  src={selectedImage.image} 
-                  alt={selectedImage.title}
-                  style={{ width: '100%', height: '100%', objectFit: 'contain', background: '#000' }}
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
-                <div style={{ 
-                  display: 'none',
-                  width: '100%', 
-                  height: '100%', 
-                  background: 'linear-gradient(135deg, #0d7377 0%, #14919b 100%)',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '8rem',
-                  position: 'absolute',
-                  top: 0,
-                  left: 0
-                }}>
-                  {selectedImage.emoji}
-                </div>
-              </div>
+              <div style={{ 
+                width: '100%', 
+                aspectRatio: '16/10',
+                backgroundImage: `url(${selectedImage.image})`,
+                backgroundSize: 'contain',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundColor: '#000'
+              }} />
               <div style={{ padding: '20px 30px', background: 'linear-gradient(135deg, #0d7377 0%, #14919b 100%)' }}>
                 <h3 style={{ color: 'white', marginBottom: '5px' }}>{selectedImage.title}</h3>
                 <p style={{ color: 'rgba(255,255,255,0.8)', margin: 0 }}>

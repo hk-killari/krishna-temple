@@ -203,24 +203,12 @@ const Home = () => {
                 width: '100%',
                 height: '400px',
                 borderRadius: '20px',
-                overflow: 'hidden',
                 boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
-                position: 'relative'
-              }}>
-                <img 
-                  src="/images/god-1.jpeg" 
-                  alt="Sri Venugopal Swamy Temple"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover'
-                  }}
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.parentElement.innerHTML = '<div style="width:100%;height:100%;background:linear-gradient(135deg, #0d7377 0%, #14919b 100%);display:flex;align-items:center;justify-content:center;font-size:8rem">🙏</div>';
-                  }}
-                />
-              </div>
+                backgroundImage: 'url(/images/god-1.jpeg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundColor: '#0d7377'
+              }} />
             </motion.div>
             <motion.div 
               className="about-text"
