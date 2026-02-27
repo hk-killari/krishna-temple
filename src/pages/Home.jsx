@@ -6,6 +6,7 @@ import {
   Sun, Moon, Star, Sparkles, ArrowRight,
   Bell, Gift, Camera
 } from 'lucide-react';
+import god1 from '../assets/images/god-1.jpeg';
 
 const Home = () => {
   const [countdown, setCountdown] = useState({
@@ -204,7 +205,7 @@ const Home = () => {
                 height: '400px',
                 borderRadius: '20px',
                 boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
-                backgroundImage: 'url(/images/god-1.jpeg)',
+                backgroundImage: `url(${god1})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundColor: '#0d7377'

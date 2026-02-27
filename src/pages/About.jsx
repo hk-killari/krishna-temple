@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { Heart, Star, Users, Award, BookOpen, Target, Eye } from 'lucide-react';
+import god2 from '../assets/images/god-2.jpeg';
+import construction1 from '../assets/images/construction-1.jpeg';
 
 const About = () => {
   const milestones = [
@@ -69,7 +71,7 @@ const About = () => {
                 height: '450px',
                 borderRadius: '20px',
                 boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
-                backgroundImage: 'url(/images/god-2.jpeg)',
+                backgroundImage: `url(${god2})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundColor: '#0d7377'
@@ -290,7 +292,7 @@ const About = () => {
                 height: '400px',
                 borderRadius: '20px',
                 boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
-                backgroundImage: 'url(/images/construction-1.jpeg)',
+                backgroundImage: `url(${construction1})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundColor: '#0d7377'

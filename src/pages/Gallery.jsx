@@ -2,30 +2,47 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, Camera, Video, Image, Building } from 'lucide-react';
 
+import god1 from '../assets/images/god-1.jpeg';
+import god2 from '../assets/images/god-2.jpeg';
+import god3 from '../assets/images/god-3.jpeg';
+import god4 from '../assets/images/god-4.jpeg';
+import god5 from '../assets/images/god-5.jpeg';
+import god6 from '../assets/images/god-6.jpeg';
+import god7 from '../assets/images/god-7.jpeg';
+import god8 from '../assets/images/god-8.jpeg';
+import god9 from '../assets/images/god-9.jpeg';
+import god10 from '../assets/images/god-10.jpeg';
+import construction1 from '../assets/images/construction-1.jpeg';
+import construction2 from '../assets/images/construction-2.jpeg';
+import construction3 from '../assets/images/construction-3.jpeg';
+import construction4 from '../assets/images/construction-4.jpeg';
+import construction5 from '../assets/images/construction-5.jpeg';
+import construction6 from '../assets/images/construction-6.jpeg';
+
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [activeTab, setActiveTab] = useState('all');
 
   const galleryItems = [
     // Deity Images
-    { id: 1, category: 'deity', title: 'Sri Venugopal Swamy', emoji: '🙏', image: '/images/god-1.jpeg', description: 'Divine darshan of Lord Venugopal Swamy' },
-    { id: 2, category: 'deity', title: 'Sri Rukmini Satyabhama Sameta', emoji: '🙏', image: '/images/god-2.jpeg', description: 'Lord with Rukmini and Satyabhama Devi' },
-    { id: 3, category: 'deity', title: 'Divine Alankaram', emoji: '✨', image: '/images/god-3.jpeg', description: 'Beautiful decoration of the deity' },
-    { id: 4, category: 'deity', title: 'Special Darshan', emoji: '🪷', image: '/images/god-4.jpeg', description: 'Special occasion darshan' },
-    { id: 5, category: 'deity', title: 'Festival Decoration', emoji: '🎉', image: '/images/god-5.jpeg', description: 'Deity decorated for festival' },
-    { id: 6, category: 'deity', title: 'Evening Aarti', emoji: '🪔', image: '/images/god-6.jpeg', description: 'Divine evening aarti darshan' },
-    { id: 7, category: 'deity', title: 'Abhishekam', emoji: '💧', image: '/images/god-7.jpeg', description: 'Sacred abhishekam ceremony' },
-    { id: 8, category: 'deity', title: 'Floral Decoration', emoji: '🌸', image: '/images/god-8.jpeg', description: 'Beautiful flower alankaram' },
-    { id: 9, category: 'deity', title: 'Utsava Murthy', emoji: '🛕', image: '/images/god-9.jpeg', description: 'Processional deity' },
-    { id: 10, category: 'deity', title: 'Sri Krishna Leela', emoji: '🦚', image: '/images/god-10.jpeg', description: 'Divine leela depiction' },
+    { id: 1, category: 'deity', title: 'Sri Venugopal Swamy', emoji: '🙏', image: god1, description: 'Divine darshan of Lord Venugopal Swamy' },
+    { id: 2, category: 'deity', title: 'Sri Rukmini Satyabhama Sameta', emoji: '🙏', image: god2, description: 'Lord with Rukmini and Satyabhama Devi' },
+    { id: 3, category: 'deity', title: 'Divine Alankaram', emoji: '✨', image: god3, description: 'Beautiful decoration of the deity' },
+    { id: 4, category: 'deity', title: 'Special Darshan', emoji: '🪷', image: god4, description: 'Special occasion darshan' },
+    { id: 5, category: 'deity', title: 'Festival Decoration', emoji: '🎉', image: god5, description: 'Deity decorated for festival' },
+    { id: 6, category: 'deity', title: 'Evening Aarti', emoji: '🪔', image: god6, description: 'Divine evening aarti darshan' },
+    { id: 7, category: 'deity', title: 'Abhishekam', emoji: '💧', image: god7, description: 'Sacred abhishekam ceremony' },
+    { id: 8, category: 'deity', title: 'Floral Decoration', emoji: '🌸', image: god8, description: 'Beautiful flower alankaram' },
+    { id: 9, category: 'deity', title: 'Utsava Murthy', emoji: '🛕', image: god9, description: 'Processional deity' },
+    { id: 10, category: 'deity', title: 'Sri Krishna Leela', emoji: '🦚', image: god10, description: 'Divine leela depiction' },
     
     // Construction Images
-    { id: 11, category: 'construction', title: 'Temple Foundation', emoji: '🏗️', image: '/images/construction-1.jpeg', description: 'Foundation and initial construction work' },
-    { id: 12, category: 'construction', title: 'Structure Progress', emoji: '🧱', image: '/images/construction-2.jpeg', description: 'Temple structure taking shape' },
-    { id: 13, category: 'construction', title: 'Gopuram Work', emoji: '🛕', image: '/images/construction-3.jpeg', description: 'Gopuram construction progress' },
-    { id: 14, category: 'construction', title: 'Main Hall', emoji: '🏛️', image: '/images/construction-4.jpeg', description: 'Main hall construction' },
-    { id: 15, category: 'construction', title: 'Finishing Work', emoji: '🔨', image: '/images/construction-5.jpeg', description: 'Finishing and detailing work' },
-    { id: 16, category: 'construction', title: 'Near Completion', emoji: '✅', image: '/images/construction-6.jpeg', description: '90% construction completed' }
+    { id: 11, category: 'construction', title: 'Temple Foundation', emoji: '🏗️', image: construction1, description: 'Foundation and initial construction work' },
+    { id: 12, category: 'construction', title: 'Structure Progress', emoji: '🧱', image: construction2, description: 'Temple structure taking shape' },
+    { id: 13, category: 'construction', title: 'Gopuram Work', emoji: '🛕', image: construction3, description: 'Gopuram construction progress' },
+    { id: 14, category: 'construction', title: 'Main Hall', emoji: '🏛️', image: construction4, description: 'Main hall construction' },
+    { id: 15, category: 'construction', title: 'Finishing Work', emoji: '🔨', image: construction5, description: 'Finishing and detailing work' },
+    { id: 16, category: 'construction', title: 'Near Completion', emoji: '✅', image: construction6, description: '90% construction completed' }
   ];
 
   const categories = [
