@@ -3,38 +3,38 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, Users, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Events = () => {
-  const [currentMonth, setCurrentMonth] = useState(new Date(2026, 3, 1));
+  const [currentMonth, setCurrentMonth] = useState(new Date(2026, 4, 1));
 
   const upcomingEvents = [
     {
-      date: '15',
-      month: 'Apr',
+      date: '6',
+      month: 'May',
       year: '2026',
-      title: 'Grand Temple Opening',
-      description: 'The most awaited moment! Grand inauguration ceremony with special pujas, cultural programs, and prasadam distribution.',
-      time: '6:00 AM onwards',
+      title: 'Grand Opening Day 1 - Poojas & Annadanam',
+      description: 'The most awaited moment! Grand inauguration with special poojas, homams, and FREE Annadanam (food) for all devotees in the afternoon.',
+      time: '6:00 AM onwards | Annadanam: 12:00 PM',
       location: 'Main Temple Complex',
       emoji: '🎉'
     },
     {
-      date: '16',
-      month: 'Apr',
+      date: '7',
+      month: 'May',
       year: '2026',
-      title: 'Maha Abhishekam',
-      description: 'Grand abhishekam ceremony with 108 sacred items. All devotees are invited to participate.',
-      time: '7:00 AM - 10:00 AM',
+      title: 'Day 2 - Kalyanam & Annadanam',
+      description: 'Divine marriage ceremony (Kalyanam) of Lord Venugopal Swamy with Sri Rukmini Devi and Satyabhama Devi. FREE Annadanam in the afternoon.',
+      time: '6:00 AM onwards | Annadanam: 12:00 PM',
       location: 'Main Sanctum',
-      emoji: '🙏'
+      emoji: '💒'
     },
     {
-      date: '21',
-      month: 'Apr',
+      date: '8',
+      month: 'May',
       year: '2026',
-      title: 'Ram Navami Celebrations',
-      description: 'Celebrating the divine birth of Lord Rama with special pujas and bhajans.',
-      time: 'Full Day',
+      title: 'Day 3 - Celebrations & Annadanam',
+      description: 'Final day celebrations with special abhishekam, cultural programs, and FREE Annadanam (Maha Prasadam) for all devotees in the afternoon.',
+      time: '6:00 AM onwards | Annadanam: 12:00 PM',
       location: 'Temple Premises',
-      emoji: '🏹'
+      emoji: '🍚'
     },
     {
       date: '10',
@@ -51,9 +51,9 @@ const Events = () => {
       month: 'Jun',
       year: '2026',
       title: 'Rath Yatra',
-      description: 'Grand chariot procession through the city with Lord Krishna\'s beautiful deities.',
+      description: 'Grand chariot procession through the village with Lord Venugopal Swamy\'s beautiful deities.',
       time: '4:00 PM - 8:00 PM',
-      location: 'City Procession',
+      location: 'Village Procession',
       emoji: '🛕'
     },
     {

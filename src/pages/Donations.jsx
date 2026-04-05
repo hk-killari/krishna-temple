@@ -234,7 +234,7 @@ const Donations = () => {
                       <input
                         type="tel"
                         name="phone"
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 73306 90367"
                         value={formData.phone}
                         onChange={handleInputChange}
                         required
@@ -403,7 +403,7 @@ const Donations = () => {
             </div>
             <div style={{ marginBottom: '20px' }}>
               <p style={{ color: '#666', marginBottom: '5px' }}>Bank & Branch</p>
-              <p style={{ fontWeight: '600', fontSize: '1.1rem' }}>State Bank of India, Hyderabad Main Branch</p>
+              <p style={{ fontWeight: '600', fontSize: '1.1rem' }}>State Bank of India, Tirupati Branch</p>
             </div>
             <div style={{
               background: '#fdf8f0',
@@ -413,7 +413,7 @@ const Donations = () => {
             }}>
               <p style={{ margin: 0, color: '#666', fontSize: '0.95rem' }}>
                 <strong>Note:</strong> After making a bank transfer, please WhatsApp your 
-                transaction details to +91 98765 43210 or email to donations@srikrishnatemple.org 
+                transaction details to +91 73306 90367 or email to donations@srivenugopalswamy.org 
                 for receipt and 80G certificate.
               </p>
             </div>

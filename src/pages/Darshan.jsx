@@ -341,7 +341,7 @@ const Darshan = () => {
               To book a puja or for more information, please contact us:
             </p>
             <p style={{ fontSize: '1.3rem', fontWeight: '600', color: '#d4a84b' }}>
-              📞 +91 98765 43210 | ✉️ puja@srikrishnatemple.org
+              📞 +91 73306 90367 | ✉️ info@srivenugopalswamy.org
             </p>
           </motion.div>
         </div>

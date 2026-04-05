@@ -31,28 +31,26 @@ const Contact = () => {
       icon: <MapPin size={28} />,
       title: 'Temple Address',
       details: [
-        'శ్రీ వేణుగోపాల స్వామి దేవస్థానం',
-        'Plot No. 123, Temple Road',
-        'Jubilee Hills, Hyderabad',
-        'Telangana - 500033, India'
+        'శ్రీ రుక్మిణీ సత్యభామ సమేత వేణుగోపాల స్వామి దేవస్థానం',
+        'Thalvaipadu Village, Pellakuru Mandal',
+        'Tirupati District, Andhra Pradesh',
+        'Pin Code: 524126, India'
       ]
     },
     {
       icon: <Phone size={28} />,
       title: 'Phone Numbers',
       details: [
-        '+91 98765 43210 (Main)',
-        '+91 98765 43211 (Puja Booking)',
-        '+91 98765 43212 (Donations)'
+        '+91 73306 90367 (Main)',
+        'WhatsApp: +91 73306 90367'
       ]
     },
     {
       icon: <Mail size={28} />,
       title: 'Email Addresses',
       details: [
-        'info@srikrishnatemple.org',
-        'puja@srikrishnatemple.org',
-        'donations@srikrishnatemple.org'
+        'info@srivenugopalswamy.org',
+        'donations@srivenugopalswamy.org'
       ]
     },
     {
@@ -138,7 +136,7 @@ const Contact = () => {
                     { icon: <Instagram size={20} />, url: 'https://instagram.com', color: '#e4405f' },
                     { icon: <Youtube size={20} />, url: 'https://youtube.com', color: '#ff0000' },
                     { icon: <Twitter size={20} />, url: 'https://twitter.com', color: '#1da1f2' },
-                    { icon: <MessageCircle size={20} />, url: 'https://wa.me/919876543210', color: '#25d366' }
+                    { icon: <MessageCircle size={20} />, url: 'https://wa.me/917330690367', color: '#25d366' }
                   ].map((social, index) => (
                     <a
                       key={index}
@@ -232,7 +230,7 @@ const Contact = () => {
                       <input
                         type="tel"
                         name="phone"
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 73306 90367"
                         value={formData.phone}
                         onChange={handleInputChange}
                       />
@@ -291,7 +289,7 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <h2>Find Us on Map</h2>
-            <p>Located in the heart of Hyderabad</p>
+            <p>Located in Thalvaipadu Village, near Tirupati - the sacred temple town</p>
           </motion.div>
 
           <motion.div
@@ -301,14 +299,14 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5456789012345!2d78.4!3d17.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI0JzAwLjAiTiA3OMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124419.97715073!2d79.35!3d13.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d5c3e1e3a0a0f%3A0x4e3a0a0a0a0a0a0a!2sTirupati%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890"
               width="100%"
               height="450"
               style={{ border: 0, borderRadius: '15px' }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Temple Location"
+              title="Temple Location - Near Tirupati, Andhra Pradesh"
             />
           </motion.div>
         </div>
@@ -324,7 +322,7 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <h2>How to Reach Us</h2>
-            <p>Convenient access from all parts of the city</p>
+            <p>Conveniently located near Tirupati and other sacred places</p>
           </motion.div>
 
           <div className="features-grid">
@@ -332,32 +330,32 @@ const Contact = () => {
               {
                 icon: '🚗',
                 title: 'By Car',
-                description: 'Ample parking available. Located just off the main road with easy access from Jubilee Hills and Banjara Hills.'
+                description: 'Ample parking available. Easy access via Tirupati-Chennai highway. Take the Pellakuru turn to reach Thalvaipadu village.'
               },
               {
                 icon: '🚌',
                 title: 'By Bus',
-                description: 'TSRTC buses stop at Jubilee Hills Check Post (500m). Routes: 10, 49, 127, 216.'
+                description: 'APSRTC buses available from Tirupati to Pellakuru. From Pellakuru, local transport to Thalvaipadu (3 km).'
               },
               {
-                icon: '🚇',
-                title: 'By Metro',
-                description: 'Nearest metro station: Jubilee Hills Check Post (Blue Line). 10-minute walk to temple.'
+                icon: '🛕',
+                title: 'From Tirumala (TTD)',
+                description: 'Our temple is just 60 KMs from the famous Tirumala Tirupati Devasthanam. Easy road connectivity.'
               },
               {
                 icon: '✈️',
                 title: 'From Airport',
-                description: 'Rajiv Gandhi International Airport is 35 km away. Cab/Uber available. Approx. 45-60 minutes.'
+                description: 'Tirupati Airport (Renigunta) is approximately 30 km away. Cabs and taxis readily available.'
               },
               {
                 icon: '🚂',
                 title: 'From Railway Station',
-                description: 'Secunderabad Junction is 10 km away. Nampally Station is 8 km away. Auto/cab available.'
+                description: 'Tirupati Railway Station is well connected to all major cities. Auto/cab available to the temple (approx. 40 km).'
               },
               {
                 icon: '🛺',
                 title: 'Local Transport',
-                description: 'Auto-rickshaws and cabs (Ola/Uber) readily available. Tell "Sri Krishna Temple, Jubilee Hills".'
+                description: 'Auto-rickshaws and cabs available. Ask for "Venugopal Swamy Temple, Thalvaipadu Village, Pellakuru Mandal".'
               }
             ].map((item, index) => (
               <motion.div
@@ -403,12 +401,12 @@ const Contact = () => {
             }}
           >
             {[
-              { name: 'Jubilee Hills Check Post', distance: '500m' },
-              { name: 'GVK One Mall', distance: '1 km' },
-              { name: 'Apollo Hospital', distance: '1.5 km' },
-              { name: 'KBR National Park', distance: '2 km' },
-              { name: 'Charminar', distance: '8 km' },
-              { name: 'Hussain Sagar Lake', distance: '5 km' }
+              { name: 'Srikalahasti Temple', distance: '25 km' },
+              { name: 'Tirumala Tirupati Devasthanam (TTD)', distance: '60 km' },
+              { name: 'Tirupati City', distance: '40 km' },
+              { name: 'Tirupati Railway Station', distance: '40 km' },
+              { name: 'Tirupati Airport (Renigunta)', distance: '30 km' },
+              { name: 'Pellakuru Town', distance: '3 km' }
             ].map((landmark, index) => (
               <div
                 key={index}
@@ -454,13 +452,13 @@ const Contact = () => {
             </p>
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a
-                href="tel:+919876543210"
+                href="tel:+917330690367"
                 className="btn btn-primary"
               >
                 <Phone size={20} /> Call Now
               </a>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/917330690367"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn"

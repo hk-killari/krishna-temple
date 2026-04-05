@@ -96,13 +96,13 @@ const Footer = () => {
             )}
             <div style={{ marginTop: '25px' }}>
               <p style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <Phone size={16} /> +91 98765 43210
+                <Phone size={16} /> +91 73306 90367
               </p>
               <p style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-                <Mail size={16} /> info@srikrishnatemple.org
+                <Mail size={16} /> info@srivenugopalswamy.org
               </p>
               <p style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <MapPin size={16} /> Hyderabad, Telangana
+                <MapPin size={16} /> Thalvaipadu, Tirupati District
               </p>
             </div>
           </div>

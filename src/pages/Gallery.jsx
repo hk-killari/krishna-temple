@@ -19,6 +19,8 @@ import construction4 from '../assets/images/construction-4.jpeg';
 import construction5 from '../assets/images/construction-5.jpeg';
 import construction6 from '../assets/images/construction-6.jpeg';
 
+import templeVideo1 from '../videos/temple-video-1.mp4';
+
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [activeTab, setActiveTab] = useState('all');
@@ -174,16 +176,68 @@ const Gallery = () => {
             <p>Watch the temple construction journey</p>
           </motion.div>
 
+          {/* Main Temple Video */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            style={{
+              background: 'white',
+              borderRadius: '20px',
+              overflow: 'hidden',
+              marginBottom: '40px',
+              boxShadow: '0 20px 60px rgba(0,0,0,0.2)'
+            }}
+          >
+            <video 
+              controls 
+              width="100%" 
+              style={{ 
+                display: 'block',
+                maxHeight: '500px',
+                objectFit: 'cover',
+                background: '#000'
+              }}
+              poster={construction1}
+            >
+              <source src={templeVideo1} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div style={{ 
+              padding: '25px 30px', 
+              background: 'linear-gradient(135deg, #0d7377 0%, #14919b 100%)'
+            }}>
+              <h3 style={{ color: 'white', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <Video size={24} /> Temple Construction Journey
+              </h3>
+              <p style={{ color: 'rgba(255,255,255,0.9)', margin: 0 }}>
+                Watch the divine journey of Sri Venugopal Swamy Temple construction - from foundation to near completion. 
+                Grand Opening: May 6, 7 & 8, 2026
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Upcoming Videos */}
+          <motion.div 
+            className="section-header"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            style={{ marginTop: '40px' }}
+          >
+            <h3 style={{ color: 'white' }}>More Videos Coming Soon</h3>
+            <p style={{ color: 'rgba(255,255,255,0.8)' }}>Stay tuned for more temple videos after grand opening</p>
+          </motion.div>
+
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-            gap: '30px'
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '25px'
           }}>
             {[
-              { title: 'Temple Construction Timelapse', duration: '5:30', emoji: '🎬' },
-              { title: 'Bhoomi Puja Ceremony', duration: '12:45', emoji: '🔥' },
-              { title: 'Artisans at Work', duration: '8:20', emoji: '🎨' },
-              { title: 'Deity Installation Highlights', duration: '15:00', emoji: '🙏' }
+              { title: 'Grand Opening Ceremony', duration: 'Coming May 6-8', emoji: '🎉' },
+              { title: 'God Marriage (Kalyanam)', duration: 'Coming May 7', emoji: '💒' },
+              { title: 'Annadanam Seva', duration: 'Coming May 6-8', emoji: '🍚' }
             ].map((video, index) => (
               <motion.div
                 key={index}
@@ -192,47 +246,27 @@ const Gallery = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 style={{
-                  background: 'white',
+                  background: 'rgba(255,255,255,0.1)',
                   borderRadius: '15px',
                   overflow: 'hidden',
-                  cursor: 'pointer'
+                  border: '2px dashed rgba(255,255,255,0.3)'
                 }}
               >
                 <div style={{
-                  height: '200px',
-                  background: 'linear-gradient(135deg, #0d7377 0%, #14919b 100%)',
+                  height: '150px',
+                  background: 'linear-gradient(135deg, rgba(13,115,119,0.5) 0%, rgba(20,145,155,0.5) 100%)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   position: 'relative'
                 }}>
-                  <div style={{ fontSize: '4rem' }}>{video.emoji}</div>
-                  <div style={{
-                    position: 'absolute',
-                    width: '60px',
-                    height: '60px',
-                    background: 'rgba(255,255,255,0.9)',
-                    borderRadius: '50%',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    boxShadow: '0 5px 20px rgba(0,0,0,0.2)'
-                  }}>
-                    <div style={{
-                      width: 0,
-                      height: 0,
-                      borderTop: '12px solid transparent',
-                      borderBottom: '12px solid transparent',
-                      borderLeft: '20px solid #0d7377',
-                      marginLeft: '5px'
-                    }} />
-                  </div>
+                  <div style={{ fontSize: '3.5rem' }}>{video.emoji}</div>
                 </div>
                 <div style={{ padding: '20px' }}>
-                  <h4 style={{ color: '#0d7377', marginBottom: '5px' }}>{video.title}</h4>
-                  <p style={{ color: '#666', margin: 0, fontSize: '0.9rem' }}>
+                  <h4 style={{ color: 'white', marginBottom: '5px' }}>{video.title}</h4>
+                  <p style={{ color: 'rgba(255,255,255,0.7)', margin: 0, fontSize: '0.9rem' }}>
                     <Video size={14} style={{ marginRight: '5px', verticalAlign: 'middle' }} />
-                    Duration: {video.duration}
+                    {video.duration}
                   </p>
                 </div>
               </motion.div>

@@ -17,7 +17,7 @@ const Home = () => {
   });
 
   useEffect(() => {
-    const openingDate = new Date('2026-04-15T06:00:00');
+    const openingDate = new Date('2026-05-06T06:00:00');
     
     const updateCountdown = () => {
       const now = new Date();
@@ -73,19 +73,19 @@ const Home = () => {
 
   const announcements = [
     {
-      date: 'Mar 15, 2026',
-      title: 'Temple Opening Ceremony',
-      description: 'Grand inauguration with special pujas and prasadam distribution.'
+      date: 'May 6, 2026',
+      title: 'Day 1 - Poojas & FREE Annadanam',
+      description: '3-day celebration begins! Special poojas + FREE Annadanam (lunch) for all devotees.'
     },
     {
-      date: 'Mar 10, 2026',
-      title: 'Final Touches Complete',
-      description: '90% construction completed. Interior decoration in progress.'
+      date: 'May 7, 2026',
+      title: 'Day 2 - Kalyanam & FREE Annadanam',
+      description: 'Divine marriage ceremony (Kalyanam) + FREE Annadanam (lunch) in afternoon.'
     },
     {
-      date: 'Feb 25, 2026',
-      title: 'Deity Installation',
-      description: 'Divine deities have been installed with proper vedic rituals.'
+      date: 'May 8, 2026',
+      title: 'Day 3 - Celebrations & FREE Annadanam',
+      description: 'Grand finale with cultural programs + FREE Maha Annadanam for all devotees.'
     }
   ];
 
@@ -95,7 +95,7 @@ const Home = () => {
       <div className="coming-soon-banner">
         <h3>
           <Sparkles size={24} />
-          Grand Opening Soon - April 2026
+          Grand Opening - May 6, 7 & 8, 2026 (3 Days Celebration)
           <Sparkles size={24} />
         </h3>
       </div>
@@ -231,7 +231,8 @@ const Home = () => {
               </p>
               <p>
                 We invite all devotees to be part of this sacred journey and witness the 
-                grand opening ceremony scheduled for April 2026.
+                grand opening ceremony on May 6, 7 & 8, 2026 - a 3-day celebration with 
+                Poojas, God Marriages (Kalyanam), and <strong>FREE Annadanam (lunch) every afternoon</strong> for all devotees!
               </p>
               <div className="about-stats">
                 <div className="stat-item">
@@ -391,7 +392,7 @@ const Home = () => {
             >
               <div className="feature-icon"><MapPin size={32} /></div>
               <h3>Location</h3>
-              <p>Hyderabad, Telangana<br />India - 500001</p>
+              <p>Thalvaipadu Village, Pellakuru Mandal<br />Tirupati District - 524126</p>
             </motion.div>
             <motion.div 
               className="feature-card"
@@ -413,7 +414,7 @@ const Home = () => {
             >
               <div className="feature-icon"><Users size={32} /></div>
               <h3>Contact</h3>
-              <p>+91 98765 43210<br />info@srikrishnatemple.org</p>
+              <p>+91 73306 90367<br />info@srivenugopalswamy.org</p>
             </motion.div>
           </div>
         </div>

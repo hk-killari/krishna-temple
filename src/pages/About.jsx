@@ -9,7 +9,7 @@ const About = () => {
     { year: '2023', title: 'Foundation Laid', description: 'Bhoomi Puja performed and construction commenced with traditional vedic rituals.' },
     { year: '2024', title: 'Structure Completed', description: 'Main temple structure, gopuram, and mandapam construction finished.' },
     { year: '2025', title: 'Interior Work', description: 'Intricate carvings, deity installation, and interior decoration began.' },
-    { year: '2026', title: 'Grand Opening', description: '90% complete, preparing for the grand inauguration in April 2026.' },
+    { year: '2026', title: 'Grand Opening', description: 'Grand Opening on May 6, 7 & 8, 2026! 3 days of Poojas, Kalyanam & FREE Annadanam daily.' },
   ];
 
   const values = [
